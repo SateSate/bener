@@ -62,6 +62,10 @@
         left: 19%;
         top: 6%;
       }
+      &.eco,
+      .lux {
+        left: 49%;
+      }
     }
     &.tile02 {
       z-index: 70;
@@ -115,6 +119,94 @@
     img {
       height: 100%;
       object-fit: cover;
+    }
+    &.out {
+      top: -100% !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+    }
+  }
+  .ndares {
+    &.tile01 {
+      z-index: 120;
+      &.active {
+        left: 19%;
+        top: 6%;
+      }
+      &.eco,
+      .lux {
+        left: 49%;
+      }
+    }
+    &.tile02 {
+      z-index: 110;
+      &.active {
+        left: 23%;
+        top: 2%;
+      }
+    }
+    &.tile03 {
+      z-index: 100;
+      &.active {
+        left: 28%;
+        top: -1%;
+      }
+    }
+    &.tile04 {
+      z-index: 90;
+      &.active {
+        left: 36%;
+        top: -3%;
+      }
+    }
+    &.tile05 {
+      z-index: 80;
+      &.active {
+        left: 42%;
+        top: -5%;
+      }
+    }
+    &.tile06 {
+      z-index: 70;
+      &.active {
+        left: 48%;
+        top: -8%;
+      }
+    }
+    &.tile07 {
+      z-index: 60;
+      &.active {
+        left: 56%;
+        top: -11%;
+      }
+    }
+    &.tile08 {
+      z-index: 50;
+      &.active {
+        left: 64%;
+        top: -13%;
+      }
+    }
+    &.tile09 {
+      z-index: 40;
+      &.active {
+        left: 70%;
+        top: -15%;
+      }
+    }
+    &.tile10 {
+      z-index: 30;
+      &.active {
+        left: 76%;
+        top: -17%;
+      }
+    }
+    &.tile11 {
+      z-index: 20;
+      &.active {
+        left: 82%;
+        top: -19%;
+      }
     }
   }
 }
@@ -215,9 +307,14 @@
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.519608) 0 0 20px 5px;
     }
+    &.out {
+      top: -100% !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+    }
     &.active {
       opacity: 1;
-      &:first-child {
+      &.marker01 {
         left: 20%;
         top: 80%;
         @media screen and (max-width: 1100px) {
@@ -228,7 +325,7 @@
           top: 70%;
         }
       }
-      &:nth-child(2) {
+      &.marker02 {
         left: 30%;
         top: 70%;
         @media screen and (max-width: 1100px) {
@@ -239,7 +336,7 @@
           top: 60%;
         }
       }
-      &:nth-child(3) {
+      &.marker03 {
         left: 44%;
         top: 60%;
         @media screen and (max-width: 1100px) {
@@ -250,7 +347,7 @@
           top: 50%;
         }
       }
-      &:nth-child(4) {
+      &.marker04 {
         left: 55%;
         top: 50%;
         @media screen and (max-width: 1100px) {
@@ -261,7 +358,7 @@
           top: 40%;
         }
       }
-      &:nth-child(5) {
+      &.marker05 {
         left: 67%;
         top: 40%;
         @media screen and (max-width: 1100px) {
@@ -272,7 +369,7 @@
           top: 30%;
         }
       }
-      &:nth-child(6) {
+      &.marker06 {
         left: 76%;
         top: 33%;
         @media screen and (max-width: 1100px) {
@@ -283,7 +380,7 @@
           top: 20%;
         }
       }
-      &:nth-child(7) {
+      &.marker07 {
         left: 84%;
         top: 25%;
         @media screen and (max-width: 1100px) {
@@ -294,7 +391,7 @@
           top: 10%;
         }
       }
-      &:nth-child(8) {
+      &.marker08 {
         left: 91%;
         top: 15%;
         @media screen and (max-width: 1100px) {
@@ -313,5 +410,25 @@
   z-index: 9999;
   .marker-tooltip-title {
     border-bottom: 1px solid #ccc;
+  }
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: all 0.7s ease-in-out;
+    &:hover {
+      background-color: #f5f5f5;
+    }
+    &.active {
+      background-color: #f5f5f5;
+    }
   }
 }
