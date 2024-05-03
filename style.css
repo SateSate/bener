@@ -138,14 +138,6 @@
 .tiles-container .ndares.tile01 {
   z-index: 120;
 }
-.tiles-container .ndares.tile01.active {
-  left: 19%;
-  top: 6%;
-}
-.tiles-container .ndares.tile01.eco,
-.tiles-container .ndares.tile01 .lux {
-  left: 49%;
-}
 .tiles-container .ndares.tile02 {
   z-index: 110;
 }
@@ -215,6 +207,58 @@
 .tiles-container .ndares.tile11.active {
   left: 82%;
   top: -19%;
+}
+.tiles-container .catia {
+  height: 280px;
+}
+.tiles-container .catia.tile01 {
+  z-index: 20;
+}
+.tiles-container .catia.tile01.active {
+  left: 49%;
+  top: 48%;
+}
+.tiles-container .catia.tile02 {
+  z-index: 30;
+}
+.tiles-container .catia.tile02.active {
+  left: 50%;
+  top: 37%;
+}
+.tiles-container .catia.tile03 {
+  z-index: 40;
+}
+.tiles-container .catia.tile03.active {
+  left: 50%;
+  top: 26%;
+}
+.tiles-container .catia.tile04 {
+  z-index: 50;
+}
+.tiles-container .catia.tile04.active {
+  left: 51%;
+  top: 12%;
+}
+.tiles-container .catia.tile05 {
+  z-index: 60;
+}
+.tiles-container .catia.tile05.active {
+  left: 51%;
+  top: 1%;
+}
+.tiles-container .catia.tile06 {
+  z-index: 70;
+}
+.tiles-container .catia.tile06.active {
+  left: 52%;
+  top: -13%;
+}
+.tiles-container .catia.tile07 {
+  z-index: 80;
+}
+.tiles-container .catia.tile07.active {
+  left: 52%;
+  top: -20%;
 }
 
 .btn-holder {

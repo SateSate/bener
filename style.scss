@@ -129,14 +129,6 @@
   .ndares {
     &.tile01 {
       z-index: 120;
-      &.active {
-        left: 19%;
-        top: 6%;
-      }
-      &.eco,
-      .lux {
-        left: 49%;
-      }
     }
     &.tile02 {
       z-index: 110;
@@ -206,6 +198,59 @@
       &.active {
         left: 82%;
         top: -19%;
+      }
+    }
+  }
+  .catia {
+    height: 280px;
+
+    &.tile01 {
+      z-index: 20;
+      &.active {
+        left: 49%;
+        top: 48%;
+      }
+    }
+    &.tile02 {
+      z-index: 30;
+      &.active {
+        left: 50%;
+        top: 37%;
+      }
+    }
+    &.tile03 {
+      z-index: 40;
+      &.active {
+        left: 50%;
+        top: 26%;
+      }
+    }
+    &.tile04 {
+      z-index: 50;
+      &.active {
+        left: 51%;
+        top: 12%;
+      }
+    }
+    &.tile05 {
+      z-index: 60;
+      &.active {
+        left: 51%;
+        top: 1%;
+      }
+    }
+    &.tile06 {
+      z-index: 70;
+      &.active {
+        left: 52%;
+        top: -13%;
+      }
+    }
+    &.tile07 {
+      z-index: 80;
+      &.active {
+        left: 52%;
+        top: -20%;
       }
     }
   }
